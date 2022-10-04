@@ -12,7 +12,6 @@ def sectors(lat1, lon1, distance, azimuth):
 	print(f'math.sin(radlat) {str(math.sin(radlat))}')
 	print(f'{lon1},{lat1},0') # Creates the First point as the Point
 	for num in range(0,120):
-		azimuth
 		brng = math.radians((azimuth+300+num)%360) #adjustment made to begin arc for 120 (assumed) sector size
 		lat2 = math.asin(math.sin(radlat) * math.cos(d/r) + math.cos(radlat) * math.sin(d/r) * math.cos(brng))			
 		lon2 = radlon + math.atan2(math.sin(brng)*math.sin(d/r)*math.cos(radlat), math.cos(d/r)-math.sin(radlat)*math.sin(lat2))
